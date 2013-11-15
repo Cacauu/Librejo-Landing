@@ -1,0 +1,37 @@
+extends layout
+
+block content
+  h1= title
+  #wrapper
+      #content
+        p Welcome to Librejo
+        p Librejo is a PHP-library for the <a href="https://tent.io">Tent protocol</a>
+        p For your information: Librejo is still work in progress, the latest release is version 0.1.1. There are some minor API changes ahead but the public API is nearly done and should not change that much in the future.
+        
+        <div style="clear:both"></div>
+    
+        #github
+            a(href='https://github.com/cacauu/librejo') Librejo on GitHub
+    
+        #docs
+            a(href='./docs') Read the docs
+        
+        <div style="clear:both"></div>
+        
+    #numbers
+      h2 Features
+      .feature
+        h2 Open
+        p Librejo is an open-source project, everyone is able to view and edit the source code. If there is a bug that annoys you or if your project needs a certain feature, just fork the repo and create a pull request once you are done implementing your stuff.
+        
+        .feature
+        h2 Easy to use
+        p Even though the public API is not completly done yet, the library is already really easy to use. It does not use any wild API calls with thousands of parameters and hundreds of unknown things, Librejo is built to be simple and fast to use.
+            
+      .feature
+        h2 Tent 0.3 compatible
+        p Librejo works with the Tent 0.3 API. This is the latest version of the Tent API that is available at the moment which means that every Tent entity running on an up-to-date server is able to use your Librejo-powered app.
+
+  footer 
+    p Librejo is a library made with ♥︎ by <a href="https://cacauu.de">Yannik Achternbosch</a>, it is released under BSD 3.0 license.
+    p The Landing page is hosted on <a href="https://citizenweb.is/">Citizenweb.is</a> servers.
